@@ -47,3 +47,122 @@ button.accept-policy {
     white-space: nowrap;
     line-height: 60px;
 }
+
+.titre {
+    position: absolute;
+    width: 235px;
+    height: 42px;
+    left: 293px;
+    top: 65px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-primary {
+    font-size: 20px;
+    border-radius: 100px;
+    background: rgba(155, 170, 250, 0.16);
+    font-family: 'Century Gothic';
+    color: #367BF5;
+    border-style: none;
+}
+
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+        border: 2px solid #9BAAFA;
+        text-decoration-line: underline;
+    }
+
+.footer {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #434343;
+}
+
+.mynavbar {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+ul {
+    font-size: 25px;
+}
+
+li {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+
+    ul li ul.dropdown {
+        min-width: 100%;
+        background: #fff;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+/*multi dropdown css*/
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li ul {
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    display: none;
+}
+
+    .nav li ul li a {
+        padding: 15px;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .nav li ul li ul {
+        left: 100%;
+        top: 0;
+    }
+
+ul li:hover > ul {
+    display: block;
+}
+
+.nav li ul {
+    min-width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav li:hover {
+    text-decoration: underline;
+}

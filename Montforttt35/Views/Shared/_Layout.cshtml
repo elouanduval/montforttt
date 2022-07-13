@@ -10,58 +10,104 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="logo" src="~/logoMontfort.png" style="height: 90px;width: 140px;" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="logo" src="~/logoMontfort.png" style="height: 172px;width: 283px;" /></a>
+                    <h1 class="titre">MONTFORT T.T.</h1>
+                </div>
+                <div>
+                    <a class="btn btn-primary" href="" role="button">Inscription</a>
+                    <a class="btn btn-primary" href="" role="button">Connexion</a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <nav class="mynavbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                    <ul class="nav">
+                        <!--Club-->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Le club</a>
-                            <ul>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Interview décalée</a>
-                            </ul>
-                            <ul>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Progressions</a>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Infos Pratiques</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Compétitions</a>
-                            <ul>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Championnat Adulte</a>
-                            </ul>
-                            <ul>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Championnat Jeune</a>
-                            </ul>
-                            <ul>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Critérium</a>
-                                    <ul>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Critérium Féminin</a>
-                                    </ul>
-                                    <ul>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Critérium Masculin</a>
-                                    </ul>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Le Club &#9662;</a>
+                            <ul class="dropdown">
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Présentation</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Organigramme</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Actualités</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Interview</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Progressions</a>
                                 </li>
                             </ul>
-                            <ul>
+                        </li>
+                        <!--Infos Pratiques-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Infos Pratiques &#9662;</a>
+                            <ul class="dropdown">
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Section loisir</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Section compétiteur</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Entrainements</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Tarifs</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Partenaire</a>
+                                </li>
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Liens utiles</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Compétitions-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Compétitions &#9662;</a>
+                            <ul class="dropdown">
+                                <li class="nav">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Championnat par équipe &#9656;</a>
+                                    <ul>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Championnat adulte</a></li>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Championnat jeune</a></li>
+                                    </ul>
                                 <li>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Compétitions individuelles</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Compétition individuels &#9656;</a>
                                     <ul>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Tournois</a>
+                                        <li>
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Critérium &#9656;</a>
+                                            <ul>
+                                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Critérium féminin</a></li>
+                                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Critérium fédéral</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Circuit des jeunes</a></li>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Finales par classements</a></li>
+                                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Championnat d’Ille-et-Vilaine</a></li>
                                     </ul>
                                 </li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Tournois</a></li>
                             </ul>
                         </li>
+                        <!--Photos & Vidéos-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Photos & Vidéos</a>
                         </li>
+                        <!--Contact & Plan-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Contact & Plan</a>
                         </li>
@@ -74,11 +120,26 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style=" position:inherit; width: 100%; height: inherit; background: #FFFFFF; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
         <div class="container">
-            &copy; 2022 - Montforttt35 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 Montfort T.T. - tous droits réservés
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
