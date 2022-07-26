@@ -54,13 +54,13 @@ button.accept-policy {
 .titre {
     position: absolute;
     width: 235px;
-    height: 42px;
-    left: 293px;
-    top: 65px;
+    height: 22px;
+    left: 233px;
+    top: 60px;
     font-family: 'Century Gothic';
     font-style: normal;
     font-weight: 700;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 42px;
     /* identical to box height */
     display: flex;
@@ -70,7 +70,7 @@ button.accept-policy {
 }
 
 .btn-primary {
-    font-size: 20px;
+    font-size: 16px;/*pas mal*/
     border-radius: 100px;
     background: rgba(155, 170, 250, 0.16);
     font-family: 'Century Gothic';
@@ -89,7 +89,7 @@ button.accept-policy {
 }
 
 ul {
-    font-size: 25px;
+    font-size: 20px;/*pas mal*/
 }
 
 li {
@@ -162,6 +162,7 @@ ul li:hover > ul {
 .footerRights {
     padding-top: 40px;
     text-align: center;
+    font-size:14px;
 }
 
 .footer {
@@ -180,7 +181,7 @@ a .img-footer {
     position: absolute;
     width: 235px;
     font-weight: 700;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 42px;
     /* identical to box height */
     display: flex;
@@ -197,7 +198,7 @@ a .img-footer {
     .containerFooter h1 {
         font-family: 'Century Gothic';
         font-weight: 700;
-        font-size: 34px;
+        font-size: 27px;
         color: #000000;
     }
 
@@ -206,7 +207,7 @@ a .img-footer {
 }
 
 .item {
-    width: 14%;
+    width: 11%;
     /*background: #007ed3;*/
     min-height: 100px;
     margin: 5px;
